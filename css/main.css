@@ -1,0 +1,60 @@
+.main {
+  width: 100%;
+  height: auto;
+}
+
+.section {
+  padding: 20px;
+}
+
+.page__main--section-1 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "page__main--article-1"
+    "page__main--article-2"
+    "page__main--article-3"
+    "page__main--article-4";
+  justify-items: center;
+}
+
+.page__main--article-1 {
+  grid-area: page__main--article-1;
+}
+
+.page__main--article-2 {
+  grid-area: page__main--article-2;
+}
+
+.page__main--article-3 {
+  grid-area: page__main--article-3;
+}
+
+.page__main--article-4 {
+  grid-area: page__main--article-4;
+}
+
+.article__div {
+  width: 70vw;
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.article__img-1 {
+  background-image: url(/project8/assets/images/Everyday-Bundle-Mocks-final_1080x720_crop_center.jpg.webp);
+}
+
+.article__img-2 {
+  background-image: url(/project8/assets/images/Packaging_TravelerClosedBracket1_Monogram_May20204517_d3899632-1a43-425f-a16a-1d5b968810c7_1080x720_crop_center.jpg.webp);
+}
+
+.article__img-3 {
+  background-image: url(/project8/assets/images/Packaging_StudioClosedBracket1_Monogram_May20204507_548446cb-17c9-4fc2-8b12-ae1b1a308a7e_1080x720_crop_center.jpg.webp);
+}
+
+.article__img-4 {
+  background-image: url(/project8/assets/images/Packaging_MasterClosedBracket1_Monogram_May20204494_1080x720_crop_center.jpg.webp);
+}
