@@ -3,6 +3,10 @@
   height: auto;
 }
 
+.page__main {
+  font-family: sans-serif;
+}
+
 .section {
   padding: 20px;
 }
@@ -41,6 +45,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
 .article__img-1 {
@@ -57,4 +62,67 @@
 
 .article__img-4 {
   background-image: url(/project8/assets/images/Packaging_MasterClosedBracket1_Monogram_May20204494_1080x720_crop_center.jpg.webp);
+}
+
+.span {
+  background-color: var(--color-background1);
+  padding: 5px 10px;
+  color: var(--color-text2);
+}
+
+.span__order {
+  background-color: var(--color-background2);
+  color: var(--color-text3);
+  padding: 5px 15px;
+}
+
+.section__span {
+  position: absolute;
+  right: 0px;
+  top: 20px;
+  font-size: var(--step7--1);
+  font-weight: 700;
+}
+
+.article__div-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.h3,
+.buttom,
+.p {
+  color: var(--color-background1);
+}
+
+.h3__article,
+.buttom {
+  letter-spacing: 1.5px;
+}
+
+.article__buttom {
+  border: 0;
+  background-color: var(--color-text2);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
+  .page__main--section-1 {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "page__main--article-1 page__main--article-2"
+      "page__main--article-3 page__main--article-4";
+    justify-items: center;
+  }
+
+  .article__div {
+    width: 40vw;
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
 }
