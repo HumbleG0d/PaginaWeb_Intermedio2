@@ -2,15 +2,11 @@
   box-sizing: border-box;
 }
 
-body {
-  width: 100vw;
-  height: auto;
-}
-
 .header {
   width: 100vw;
   height: 55vh;
   min-height: 55vh;
+  max-width: 100%;
   background-color: yellow;
   font-family: sans-serif;
 }
