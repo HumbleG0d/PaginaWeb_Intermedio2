@@ -103,6 +103,39 @@
   cursor: pointer;
 }
 
+/**section 2*/
+
+.section-1__img {
+  background-image: url(/project8/assets/images/shop-banner-module.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100vw;
+  height: 40vh;
+}
+
+.section-1__inf {
+  color: var(--color-background1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-1__title {
+  display: block;
+  letter-spacing: 0.25rem;
+  font-weight: 700;
+  font-size: 2.4375rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.section-1__p {
+  font-size: var(--step7-1);
+}
+
 @media screen and (min-width: 900px) {
   .page__main--section-1 {
     grid-template-columns: repeat(2, auto);
