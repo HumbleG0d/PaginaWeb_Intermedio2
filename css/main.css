@@ -112,6 +112,7 @@
   background-position: center;
   position: relative;
   width: 100vw;
+  max-width: 100%;
   height: 40vh;
 }
 
@@ -136,6 +137,117 @@
   font-size: var(--step7-1);
 }
 
+/**section 3*/
+
+.section-2 {
+  padding: 20px;
+}
+
+.page__main--section-2 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(max-content, 10);
+  grid-template-areas:
+    "section-2__article-1"
+    "section-2__article-2"
+    "section-2__article-3"
+    "section-2__article-4"
+    "section-2__article-5"
+    "section-2__article-6"
+    "section-2__article-7"
+    "section-2__article-8"
+    "section-2__article-9"
+    "section-2__article-10";
+  justify-content: center;
+  align-items: center;
+}
+
+.section-2__article-1 {
+  grid-area: section-2__article-1;
+}
+
+.section-2__article-2 {
+  grid-area: section-2__article-2;
+}
+
+.section-2__article-3 {
+  grid-area: section-2__article-3;
+}
+
+.section-2__article-4 {
+  grid-area: section-2__article-4;
+}
+
+.section-2__article-5 {
+  grid-area: section-2__article-5;
+}
+
+.section-2__article-6 {
+  grid-area: section-2__article-6;
+}
+
+.section-2__article-7 {
+  grid-area: section-2__article-7;
+}
+
+.section-2__article-8 {
+  grid-area: section-2__article-8;
+}
+
+.section-2__article-9 {
+  grid-area: section-2__article-9;
+}
+
+.section-2__article-10 {
+  grid-area: section-2__article-10;
+}
+
+.section--article__img-1 {
+  background-image: url(/project8/assets/images/20221018_MonogramCC_Case_06_1080x720_crop_center.jpg.webp);
+}
+
+.section--article__img-2 {
+  background-image: url(/project8/assets/images/Packaging_CoreBracket1_Monogram_May20204545_ccb8b10a-0772-448b-9857-a14fa83bd5b7_1080x720_crop_center.jpg.webp);
+}
+
+.section--article__img-3 {
+  background-image: url(/project8/assets/images/Consoles_SliderBracket1_Monogram_May2020_4565_f941e8d9-d194-47ee-a54a-79132f105e34_1920x1280_crop_center.jpg.webp);
+}
+
+.section--article__img-4 {
+  background-image: url(/project8/assets/images/Packaging_CoreBracket1_Monogram_May20204545_ccb8b10a-0772-448b-9857-a14fa83bd5b7_1920x1280_crop_center.jpg.webp);
+}
+
+.section--article__img-5 {
+  background-image: url(/project8/assets/images/Packaging_SliderHeroBracket1_Monogram_May20204536_8b0e1987-0315-491e-9951-a9404031b55a_1920x1280_crop_center.jpg.webp);
+}
+
+.section--article__img-6 {
+  background-image: url(/project8/assets/images/Packaging_SliderHeroBracket1_Monogram_May20204536_8b0e1987-0315-491e-9951-a9404031b55a_1920x1280_crop_center.jpg.webp);
+}
+
+.section--article__img-7 {
+  background-image: url(/project8/assets/images/SW-box-render-mini-midi-final-august_1366x984_crop_center.jpg.webp);
+}
+
+.section--article__img-8 {
+  background-image: url(/project8/assets/images/SW-box-render-mini-photo-final-august_1366x984_crop_center.jpg.webp);
+}
+
+.section--article__img-9 {
+  background-image: url(/project8/assets/images/SW-box-render-mini-video-final-august_1366x984_crop_center.jpg.webp);
+}
+
+.section--article__img-10 {
+  background-image: url(/project8/assets/images/MONO_CONSOLE_CARE_STU_453eaa1a-02d9-4ba7-9d9a-8d05e2915f8f_1366x904_crop_center.jpg.webp);
+}
+
+.span-new {
+  background-color: var(--color-background2);
+  color: var(--color-text3);
+  padding: 5px 10px;
+}
+
 @media screen and (min-width: 900px) {
   .page__main--section-1 {
     grid-template-columns: repeat(2, auto);
@@ -151,11 +263,38 @@
     width: 40vw;
     height: 30vh;
   }
+
+  .page__main--section-2 {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+      "section-2__article-1 section-2__article-2"
+      "section-2__article-3 section-2__article-4"
+      "section-2__article-5 section-2__article-6"
+      "section-2__article-7 section-2__article-8"
+      "section-2__article-9 section-2__article-10";
+    gap: 20px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .article__div {
     width: 557px;
     height: 371px;
+  }
+
+  .article__div-2 {
+    width: 336.66px;
+    height: 336.66px;
+  }
+
+  .page__main--section-2 {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "section-2__article-1 section-2__article-2  section-2__article-3" "section-2__article-4        section-2__article-5 section-2__article-6"
+      "section-2__article-7 section-2__article-8 section-2__article-9"
+      "section-2__article-10 . .";
+    gap: 20px;
   }
 }
