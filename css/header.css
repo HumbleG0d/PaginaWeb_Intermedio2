@@ -36,9 +36,11 @@
   padding: 5px 10px;
   background-color: var(--color-background1);
   width: 95%;
-  height: 12%;
+  height: 8%;
   font-size: var(--step--1);
   letter-spacing: 0.125rem;
+  position: fixed;
+  z-index: 100;
 }
 
 .page__nav--ul {

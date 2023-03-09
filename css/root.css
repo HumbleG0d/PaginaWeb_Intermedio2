@@ -1,0 +1,18 @@
+:root {
+  --color-text1: #efc2b3;
+  --color-text2: #ffffff;
+  --color-text3: #212529;
+  --color-background1: #1a2456;
+  --color-background2: #ff8d6b;
+  /*!700px*/
+  --step7--2: clamp(0.69rem, calc(0.56rem + 0.31vw), 0.8rem);
+  --step7--1: clamp(0.83rem, calc(0.62rem + 0.49vw), 1rem);
+  --step7-0: clamp(1rem, calc(0.68rem + 0.74vw), 1.25rem);
+  --step7-1: clamp(1.2rem, calc(0.73rem + 1.07vw), 1.56rem);
+  --step7-2: clamp(1.44rem, calc(0.77rem + 1.52vw), 1.95rem);
+  --step7-3: clamp(1.73rem, calc(0.8rem + 2.11vw), 2.44rem);
+  --step7-4: clamp(2.07rem, calc(0.81rem + 2.9vw), 3.05rem);
+  --step7-5: clamp(2.49rem, calc(0.77rem + 3.93vw), 3.82rem);
+  /*!1000px*/
+  --step--1: clamp(0.83rem, calc(0.14rem + 1.11vw), 1rem);
+}
