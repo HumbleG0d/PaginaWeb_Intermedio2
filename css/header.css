@@ -118,6 +118,11 @@
   font-weight: 300;
 }
 
+/**Animaciones*/
+.nav__item-a:hover{
+  color: var(--color-background2);
+}
+
 /**Medas query*/
 @media screen and (min-width: 1000px) {
   .li-hambur {
